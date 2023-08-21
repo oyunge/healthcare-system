@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* smaller screen */
+@media (max-width: 700px){
+  .header-left {
+    flex-direction: column;
+    display: table;
+    margin: auto;
+    justify-content: flex-end;
+  }
+}
+
+.my-swal-container{
+  z-index: 9999
+}
+.image-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-preview {
+  max-width: 100%;
+  max-height: 200px;
+  margin-bottom: 10px;
+}
+
+/* smaller screen */
+@media (max-width: 600px){
+  .image-contact{
+    display: none;
+  }
+  .contact3{
+    margin-top: 20px;
+  }
+}
+/* smaller screen */
+@media (min-width: 600px){
+  .contact3{
+    margin-top: -45px;
+  }
+}
+
+
+.disease-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.disease-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  font-weight: bold;
+  width: 200px;
+}
+
+.disease-card.active {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.symptom {
+  margin: 5px 0;
+}
+
+.selected-disease {
+  margin-top: 20px;
+}
+.swal-custom{
+  z-index: 9999;
+}
